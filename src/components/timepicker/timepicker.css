@@ -1,0 +1,288 @@
+.ios-timepicker-react button {
+    border: none;
+    background: transparent;
+    cursor: pointer;
+ }
+ 
+ .ios-timepicker-react input {
+    border: none;
+    background: transparent;
+    cursor: pointer;
+ }
+ 
+ .ios-timepicker-react input:focus {
+    outline: none;
+ }
+ 
+ .ios-timepicker-react {
+    margin-bottom: 50px;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 0 48px 10px rgba(0, 0, 0, 0.5);
+ }
+ 
+ .ios-timepicker-react-transition {
+    animation: fade-in 150ms ease-out;
+ }
+ 
+ @keyframes fade-in {
+    0% {
+       transform: translateY(150px);
+       opacity: 0;
+    }
+    100% {
+       transform: translateY(0);
+       opacity: 1;
+    }
+ }
+ 
+ .ios-timepicker-react-container {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    background-color: #fff;
+    width: 220px;
+    overflow: hidden;
+    /* border-radius: 0 0 15px 17px; */
+    padding: 20px 0;
+    /* box-shadow: inset 0px 0px 5px 0px rgba(255, 159, 10, 0.5); */
+    /* box-shadow: 0 11px 15px -7px rgb(0 0 0 / 20%),
+     0 24px 38px 3px rgb(0 0 0 / 14%), 0 9px 46px 8px rgb(0 0 0 / 12%); */
+    border: none;
+ }
+ 
+ .ios-timepicker-react-hour {
+    position: relative;
+    width: 50px;
+    overflow: hidden;
+    z-index: 100;
+    margin-right: 5px;
+ }
+ 
+ .ios-timepicker-react-minute {
+    position: relative;
+    width: 50px;
+    overflow: hidden;
+    z-index: 100;
+    margin-left: 5px;
+ }
+ 
+ .ios-timepicker-react-hour-format {
+    position: relative;
+    width: 40px;
+    overflow: hidden;
+    z-index: 100;
+ }
+ 
+ .ios-timepicker-react-fast {
+    transition: transform 700ms cubic-bezier(0.13, 0.67, 0.01, 0.94);
+ }
+ 
+ .ios-timepicker-react-slow {
+    transition: transform 600ms cubic-bezier(0.13, 0.67, 0.01, 0.94);
+ }
+ 
+ .ios-timepicker-react-selected-overlay {
+    position: absolute;
+    border-radius: 6px;
+    background-color: #f2bd13;
+    pointer-events: none;
+    margin: 0 10px;
+    left: 0;
+    right: 0;
+    z-index: 1;
+    /* box-shadow: inset 0px 0px 2px 0px rgba(255, 159, 10, 0.3); */
+ }
+ 
+ .ios-timepicker-react-top-shadow {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    background: #0009;
+    background: linear-gradient(180deg, #0009 0%, #1c1c1c 100%);
+ }
+ 
+ .ios-timepicker-react-bottom-shadow {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    background: #0009;
+    background: linear-gradient(0deg, #0009 0%, hsla(0, 0%, 11%, 1) 100%);
+ }
+ 
+ .ios-timepicker-react-cell-hour {
+    width: 100%;
+    text-align: center;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    user-select: none;
+    transition: all 100ms linear;
+ }
+ .ios-timepicker-react-cell-minute {
+    width: 100%;
+    text-align: center;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    user-select: none;
+    transition: all 100ms linear;
+ }
+ .ios-timepicker-react-cell-hour-format {
+    width: 100%;
+    text-align: center;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    user-select: none;
+    transition: all 100ms linear;
+ }
+ 
+ .ios-timepicker-react-cell-inner-hour {
+    width: fit-content;
+    height: 100%;
+    transition: all 100ms linear;
+    cursor: pointer;
+    border-radius: 7px;
+    line-height: 35px;
+    text-align: center;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    font-size: 14px;
+    color: #666;
+    padding: 0 10px;
+ }
+ 
+ .ios-timepicker-react-cell-inner-hour-format {
+    width: fit-content;
+    height: 100%;
+    transition: all 100ms linear;
+    cursor: pointer;
+    border-radius: 7px;
+    line-height: 35px;
+    text-align: center;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    font-size: 14px;
+    color: #6a6a6b;
+    padding: 0 10px;
+ }
+ 
+ .ios-timepicker-react-cell-inner-minute {
+    width: fit-content;
+    height: 100%;
+    transition: all 100ms linear;
+    cursor: pointer;
+    border-radius: 7px;
+    line-height: 35px;
+    text-align: center;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    font-size: 14px;
+    color: #6a6a6b;
+    padding: 0 10px;
+ }
+ 
+ .ios-timepicker-react-cell-inner-hour:hover,
+ .ios-timepicker-react-cell-inner-minute:hover,
+ .ios-timepicker-react-cell-inner-hour-format:hover {
+    background-color: #ff9d0ac9;
+    color: white;
+ }
+ 
+ .ios-timepicker-react-cell-inner-selected {
+    /* font-weight: 500; */
+    color: #000;
+    font-size: 16px;
+ }
+ 
+ .ios-timepicker-react-cell-inner-hour-format-selected {
+    font-weight: 400;
+    color: #000;
+ }
+ 
+ .ios-timepicker-react-btn-container {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    background-color: #fff;
+    border-bottom: 1px solid #333;
+    z-index: 100;
+ }
+ 
+ .ios-timepicker-react-btn {
+    padding: 10px 15px;
+    font-size: 13px;
+    color: #fe9f06;
+    transition: all 150ms linear;
+    font-weight: 500;
+    z-index: 1;
+ }
+ 
+ .ios-timepicker-react-btn:hover {
+    opacity: 0.6;
+ }
+ 
+ .ios-timepicker-react-btn-cancel {
+    font-size: 12px;
+    font-weight: 300;
+ }
+ 
+ .ios-timepicker-react-popup {
+    position: fixed;
+    bottom: auto;
+    top: 41%;
+    left: 0;
+    right: 0;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    z-index: 99998;
+ }
+ 
+ .ios-timepicker-react-popup-overlay {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+ }
+ 
+ .ios-timepicker-react-input {
+    padding: 5px 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    font-size: 14px;
+    width: 100px;
+ }
+ 
+ .ios-timepicker-react-colon {
+    font-size: 16px;
+    color: #f7f7f7;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 500;
+    margin-top: -2px;
+    z-index: 100;
+    position: relative;
+    width: 10px;
+ }
+ 
+ .ios-timepicker-react-cell-inner-hidden {
+    opacity: 0;
+    pointer-events: none;
+ }
+ 
+ .ios-timepicker-react-hour-format-transition {
+    transition: all 300ms ease-in-out;
+ }
+ 
+ .ios-timepicker-react-btn-container > .ios-timepicker-react-btn,
+ .ios-timepicker-react-colon,
+ .ios-timepicker-react-cell-inner-hour-format-selected {
+    color: #000;
+ }

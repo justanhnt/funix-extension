@@ -1,11 +1,11 @@
 {
-  "name": "vite-web-extension",
-  "version": "1.4.0",
-  "description": "A simple chrome & firefox extension template with Vite, React, TypeScript and Tailwind CSS.",
+  "name": "funix-extension",
+  "version": "1.0.0",
+  "description": "Funix Extension",
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/JohnBra/vite-web-extension.git"
+    "url": "https://github.com/justanhnt/funix-extension.git"
   },
   "scripts": {
     "build": "vite build --config vite.config.chrome.ts",
@@ -17,6 +17,8 @@
   },
   "type": "module",
   "dependencies": {
+    "date-fns": "^4.1.0",
+    "date-fns-tz": "^3.2.0",
     "react": "^19.1.0",
     "react-dom": "^19.1.0",
     "webextension-polyfill": "^0.12.0"
